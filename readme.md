@@ -155,13 +155,6 @@ The CRM aims to replace manual diary-based processes with a web-based solution t
 - **GitHub Repository**: [github.com/CalvinSSSSSS/CRM_Project](https://github.com/CalvinSSSSSS/CRM_Project)  
 - **Document Management**: [Microsoft Teams Link](https://teams.microsoft.com/#/school/FileBrowserTabApp/...)  
 
-### Gitflow Branches
-- `main` (default)  
-- `Develop`  
-- `Feature`  
-- `Hotfix`  
-- `Release`
-
 ### Backend Architecture
 - **Frontend**: HTML, CSS, JavaScript, TypeScript (responsive design, code reliability).  
 - **Backend**: AWS (EC2, S3), MySQL (database), Java with Spring Boot (core ops), RESTful API (secure communication).  
