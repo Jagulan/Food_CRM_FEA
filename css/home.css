@@ -1,0 +1,200 @@
+
+#page-wrapper {
+    display: flex;
+    min-height: 761px;
+    flex-direction: row;
+    margin:0;
+    padding:0;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+
+.image-page {
+    width: 100%; /* Make full width initially */
+    height: 100%;
+}
+
+
+.login-page {
+    width: 100%; /* Make full width initially */
+    margin: 0;
+}
+
+.login-body {
+    text-align: center;
+}
+
+.widget-shadow {
+    height: 100%;
+    background-color: #A9D6BD;
+}
+
+#btnLogin {
+    background-color: #FF6243;
+    border-radius: 10px;
+    width: 80%;
+}
+
+#lbEmail {
+    margin-top: 22%;
+}
+
+#lbEmail, #lbPassword {
+    text-align: start;
+    width: 77% !important;
+    margin-bottom: 10px;
+}
+
+#txtEmail, #txtPassword {
+    width: 80% !important;
+}
+
+.left-side {
+    width: 100%; /* Make full width initially */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+    .square img {
+        max-height: 80px; /* Adjust the size as needed */
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+.square-1 {
+    height: 200px; /* Adjust height for square 1 */
+    width: 100%;
+    background-color: #7FC8F8;
+}
+
+.square-2 {
+    height: 200px; /* Adjust height for square 2 */
+    width: 100%;
+    background-color: #FF8577;
+}
+
+.square-3 {
+    height: 200px; /* Adjust height for square 3 */
+    width: 100%;
+    background-color: #FF8577;
+}
+
+.square-4 {
+    height: 200px; /* Adjust height for square 4 */
+    width: 100%;
+    background-color: #7FC8F8;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .content img {
+        width: 100%; /* Adjust the size as needed */
+        max-width: 400px;
+    }
+
+    .content h1 {
+        color: #FF8577;
+        font-size: 2.0em;
+
+
+    }
+
+    .content h2 {
+        color: #666666;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .left-side, .login-page {
+        width: 50%; /* Adjust widths for larger screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .left-side, .login-page {
+        width: 50%; /* Adjust widths for larger screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .left-side, .login-page {
+        width: 50%; /* Adjust widths for larger screens */
+    }
+}
+
+/* Media query for small screens (tablets) */
+@media (max-width: 767px) {
+    #page-wrapper {
+        flex-direction: column; /* Stack vertically */
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+
+    .left-side, .login-page {
+        width: 100%; /* Full width for each section */
+    }
+
+    .square-1, .square-2, .square-3, .square-4 {
+        width: 100%;
+    }
+
+    .content img {
+        width: 80%; /* Adjust the size for smaller screens */
+        max-width: 300px;
+    }
+}
+
+/* Media query for very small screens (phones) */
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.5em; /* Smaller font size */
+    }
+
+    .content h2 {
+        font-size: 1.2em; /* Smaller font size */
+    }
+
+    .square {
+        padding: 10px; /* Less padding */
+    }
+
+    #lbEmail, #lbPassword {
+        margin-top: 10%; /* Less margin top */
+    }
+
+    #btnLogin {
+        width: 90%; /* Wider button */
+    }
+
+    #txtEmail, #txtPassword {
+        width: 90% !important; /* Wider input fields */
+    }
+}
